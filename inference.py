@@ -68,7 +68,7 @@ if __name__ == "__main__":
     while True:
         user_prompt = input(user_prefix)
         generator = generate(llm, generation_config, user_prompt.strip())
-        print(assistant_prefix, end=" ", flush=True)
+        print(assistant_prefix, end="\n", flush=True)
         for word in generator:
             print(word, end="", flush=True)
         print("")
